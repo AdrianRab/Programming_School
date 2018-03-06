@@ -22,5 +22,7 @@
     	<span>GitHub</span>  
   	  </a>
   	</p>
+  	<br>
+  	<a href="mailto:adi8912@poczta.fm?Subject=Programming%20school%20question" class="button is-warning">Contact</a>
 </body>
 </html>

@@ -10,10 +10,9 @@
 	src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 <title>Insert title here</title>
 </head>
-<body>
-	<h1>Header</h1>
-	<a href="${pageContext.request.contextPath}/panel">Main page</a><br>
-	<br>
-	<br>
+<body style="background-color: hsl(204, 8%, 95%">
+	<h1>Programming school Devocjonalia</h1>
+		<a  class="button is-dark"href="${pageContext.request.contextPath}/panel">Main page</a><br>
+
 </body>
 </html>

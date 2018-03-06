@@ -4,31 +4,39 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 <%@	taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <title>All users</title>
 </head>
-<body>
-
+<body style="background-color: hsl(204, 8%, 95%)">
+	<div class="content has-text-centered">
 		<%@ include file="header.jsp"%>
+	</div>
 	<br>
 	<br>
-	<table border="1">
-		<tr>
-			<th colspan = 3>All school participants (limit 10 per page)</th>
-		</tr>
-		<c:forEach items="${users}" var="user">
-			<tr>
-				<td align="center">${user.id}</td>
-				<td align="center">${user.username}</td>
-				<td align="center">${user.email}</td>
+	<div class="content has-text-centered">
+		<table class="table" border="1">
+			<tr  class="is-primary">
+				<th colspan = 3>All school participants (limit 10 per page)</th>
 			</tr>
-		</c:forEach>
-
-	</table>
-
+			<c:forEach items="${users}" var="user">
+				<tr>
+					<td align="center">${user.id}</td>
+					<td align="center">${user.username}</td>
+					<td align="center">${user.email}</td>
+				</tr>
+			</c:forEach>
+	
+		</table>
+	</div>
 	<br>
 	<br>
-	<%@ include file="footer.jsp"%>
+	<div class="content has-text-centered">
+		<%@ include file="footer.jsp"%>
+	</div>
 	
 </body>
 </html>

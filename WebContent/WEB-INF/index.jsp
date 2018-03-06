@@ -50,13 +50,10 @@
 	    </div>
 	  </div>
 	</div>
-
 	<br>
 	<hr>
 	<br>
 	<br>
-	<div class="columns"></div>
-	
 	<div class="columns">
 		<div class="column">
 		</div>
