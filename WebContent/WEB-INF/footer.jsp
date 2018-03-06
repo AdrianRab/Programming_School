@@ -4,9 +4,23 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
+<script defer
+	src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
 <title>Insert title here</title>
 </head>
-<body>
- 	<h1>Footer</h1>
+<body style="background-color: hsl(204, 8%, 95%)">
+ 	<h4>Author</h4>
+ 	<p class="field">
+ 	  <a class="button is-large" href="https://github.com/AdrianRab">
+    	<span class="icon is-medium">
+      		<i class="fab fa-github"></i>
+    	</span>
+    	<span>GitHub</span>  
+  	  </a>
+  	</p>
 </body>
 </html>
