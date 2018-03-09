@@ -4,22 +4,46 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
 <%@	taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <title>Add group</title>
 </head>
 <body>
-	<%@ include file="WEB-INF/header.jsp"%>
-	<form action="${pageContext.request.contextPath}/AddGroups" method="post">
-		<label>Enter new group name.</label>
-		<br>
-		<br>
-		<input type="text" name="groupName">
-		<br>
-		<input type="submit" value="Submit">
-	</form>
+	<div class="content has-text-centered">
+		<%@ include file="WEB-INF/header.jsp"%>
+	</div>
 	<br>
-	<a href="${pageContext.request.contextPath}/AdminGroupPanel">Back</a>
-	
-	<%@ include file="WEB-INF/footer.jsp"%>
+	<br>
+	<p class="title is-2" align="center">Fill in the form to add a new group.</p>
+	<div align="center" style=" display: flex;justify-content: center;">
+	<form action="${pageContext.request.contextPath}/AddGroups" method="post">
+		<div class="field">
+			<label class="label">Enter new group name</label>
+			<input type="text" name="groupName">
+		</div>
+		<br>
+		<br>
+			<div class="field">
+				<div  class="control">
+				<input class="button is-primary"  type="submit" value="Submit">
+				<input class="button is-danger" type="reset" value ="Reset">
+				</div>
+			</div>
+	</form>
+	</div>
+	<br>
+	<br>
+	<p align="center">
+		<a class="button has-text-centered is-primary" href="${pageContext.request.contextPath}/AdminGroupPanel">Back</a>
+	</p>
+	<br>
+	<br>
+	<div class="content has-text-centered">
+		<%@ include file="WEB-INF/footer.jsp"%>
+	</div>
 </body>
 </html>

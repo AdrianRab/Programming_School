@@ -17,26 +17,31 @@
 	</div>
 	<br>
 	<br>
-	<div class="content has-text-centered">
-		<table class="table" border="1">
-			<tr  class="is-primary">
-				<th colspan = 3>All school participants (limit 10 per page)</th>
+	<div class="content">
+		<table class="table is-bordered is-striped is-hoverable" border="1" align="center">
+			<tr  class="is-primary has-text-centered">
+				<th colspan = 4>All school participants (limit 10 per page)</th>
 			</tr>
 			<c:forEach items="${users}" var="user">
 				<tr>
 					<td align="center">${user.id}</td>
 					<td align="center">${user.username}</td>
 					<td align="center">${user.email}</td>
+					<td align="center"><a
+					href="${pageContext.request.contextPath}/LoadUser?id=${user.id}">Details</a></td>
 				</tr>
 			</c:forEach>
 	
 		</table>
 	</div>
 	<br>
+	<p align="center">
+		<a class="button has-text-centered is-primary" href="${pageContext.request.contextPath}/panel">Back</a>
+	</p>
+	<br>
 	<br>
 	<div class="content has-text-centered">
 		<%@ include file="footer.jsp"%>
 	</div>
-	
 </body>
 </html>

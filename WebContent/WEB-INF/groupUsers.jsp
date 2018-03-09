@@ -5,14 +5,20 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
 <title>List of users of group ${group.name}</title>
 </head>
 <body>
-
-	<%@ include file="header.jsp"%>
+	<div class="content has-text-centered">
+		<%@ include file="header.jsp"%>
+	</div>
 	<br>
 	<br>
-	<table border="1">
+	<table class="table is-bordered is-striped is-hoverable" border="1" align="center">
 		<tr>
 			<th colspan = 3>List of ${group.name} participants</th>
 		</tr>
@@ -27,10 +33,15 @@
 		</c:forEach>
 
 	</table>
-
+	<br>
+	<p align="center">
+		<a class="button has-text-centered is-primary" href="${pageContext.request.contextPath}/LoadAllGroups">Back</a>
+	</p>
 	<br>
 	<br>
-	<%@ include file="footer.jsp"%>
+	<div class="content has-text-centered">
+		<%@ include file="footer.jsp"%>
+	</div>
 	
 </body>
 </html>

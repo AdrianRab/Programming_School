@@ -12,7 +12,11 @@
 
 <title>Insert title here</title>
 </head>
-<body style="background-color: hsl(204, 8%, 95%)">
+<body>
+
+	<div style="background-color: hsl(204, 4%, 89%)">
+	<hr>
+	<br>
  	<h4>Author</h4>
  	<p class="field">
  	  <a class="button is-large" href="https://github.com/AdrianRab">
@@ -24,5 +28,8 @@
   	</p>
   	<br>
   	<a href="mailto:adi8912@poczta.fm?Subject=Programming%20school%20question" class="button is-warning">Contact</a>
+  	<br>
+  	<br>
+  	</div>
 </body>
 </html>
