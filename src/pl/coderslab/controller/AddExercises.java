@@ -46,7 +46,7 @@ public class AddExercises extends HttpServlet {
 				e.printStackTrace();
 			}
 		}
-		response.sendRedirect("/Warsztaty_03/AdminExercisePanel");
+		response.sendRedirect("/Warsztaty_03/AdminExercisesPanel");
 	}
 
 }
