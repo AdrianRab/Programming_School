@@ -10,7 +10,7 @@
 	href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-<script src="${pageContext.request.contextPath}/WebContent/js/programmingSchool.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/js/programmingSchool.js" type="text/javascript"></script>
 
 <title>Programming school</title>
 </head>
