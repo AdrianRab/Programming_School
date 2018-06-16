@@ -1,0 +1,3 @@
+Programming school management project based on servlets technology.
+Application runs on Tomcat. Technologies used: Java, SQL, JSP files with JSTL library and
+Expression Language. Styled with Bulma Framework.
